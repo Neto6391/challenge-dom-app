@@ -3,7 +3,7 @@ var dataTag = "", data = [], loopTo200 = 0;
 function ajax(callback) {   
     let xhr = new XMLHttpRequest();
     xhr.overrideMimeType("application/json");
-    xhr.open('GET', 'http://localhost:3000/');
+    xhr.open('GET', 'https://challenge-job-senai.herokuapp.com/');
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == "200") {
             callback(JSON.parse(xhr.responseText));
