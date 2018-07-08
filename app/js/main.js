@@ -3,7 +3,7 @@ var dataTag = "", data = [], loopTo200 = 0;
 function ajax(callback) {   
     let xhr = new XMLHttpRequest();
     xhr.overrideMimeType("application/json");
-    xhr.open('GET', 'dados.json');
+    xhr.open('GET', 'https://neto6391.github.io/challenge-dom-app/public/dados.json');
     xhr.onreadystatechange = function () {
         if (xhr.readyState == 4 && xhr.status == "200") {
             callback(JSON.parse(xhr.responseText));
